@@ -1,0 +1,10 @@
+django
+pillow
+django-extensions
+locust
+django-grappelli
+django-suit
+django-admin-interface
+django-mysql
+mysqlclient
+pydotplus
