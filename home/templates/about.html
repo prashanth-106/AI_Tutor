@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About Adaptive Learning{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'css/cards.css' %}">
+{% endblock %}
+
+{% block content %}
+<p class="description">
+    Adaptive learning uses technology to create personalized learning experiences tailored to the needs and progress of each learner. Explore how these platforms and technologies revolutionize education.
+</p>
+
+<!-- Features Section -->
+<div class="features-section">
+    <h2>Key Features of Adaptive Learning Platforms</h2>
+    <ul>
+        <li>Real-time performance tracking</li>
+        <li>Customized learning paths</li>
+        <li>Interactive and engaging content</li>
+        
+    </ul>
+</div>
+<style>
+    /* General Styling */
+h1.page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 auto 2rem auto;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Features Section */
+.features-section {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.features-section ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.features-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Websites Section */
+.websites-section {
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.websites-section h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.website-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.website-card {
+    text-decoration: none;
+    padding: 1.5rem;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-card h3 {
+    color: #0056b3;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.website-card p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.website-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Container (Optional: For Team Section) */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f0f8ff;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #0056b3;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+<div class="card-container">
+    <a href="" class="card-link">
+        <div class="card">
+            <img src="{% static 'images/teban.jpg' %}" alt="Card Image">
+            <div class="card-content">
+                <h3>Pramanth P A</h3>
+                <p>Frontend Developper</p>
+            </div>
+        </div>
+    </a>
+    <a href="" class="card-link">
+        <div class="card">
+            <img src="{% static 'images/jonathan.jpg' %}" alt="Card Image">
+            <div class="card-content">
+                <h3>Raghunandana M S</h3>
+                <p>Backend Developper</p>
+            </div>
+        </div>
+    </a>
+    <a href="" class="card-link">
+        <div class="card">
+            <img src="{% static 'images/cock.jpg' %}" alt="Card Image">
+            <div class="card-content">
+                <h3>Manas Shet N</h3>
+                <p>Tester</p>
+            </div>
+        </div>
+    </a>
+    <a href="" class="card-link">
+        <div class="card">
+            <img src="{% static 'images/pablo.jpg' %}" alt="Card Image">
+            <div class="card-content">
+                <h3>Prashanth D M</h3>
+                <p>UI/UX designer</p>
+            </div>
+        </div>
+    </a>
+   
+
+</div>
+{% endblock %} 

@@ -1,0 +1,27 @@
+<!-- chatbot/templates/chatbot/chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById("userMessage").value;
+            const response = await fetch("chat/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `message=${message}`,
+            });
+            const data = await response.json();
+            document.getElementById("botResponse").innerText = data.response || "Error!";
+        }
+    </script>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <input type="text" id="userMessage" placeholder="Type your message">
+    <button onclick="sendMessage()">Send</button>
+    <p><strong>Bot Response:</strong> <span id="botResponse"></span></p>
+</body>
+</html>
